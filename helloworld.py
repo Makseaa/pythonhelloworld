@@ -1,8 +1,11 @@
 #print('Hello World') #This is the first script created by me: Mac Cea
 messages= ['HelloWorld','Hi Mac','This is a wonderful World']
-def ShowingMessage(message) :
+def ShowingMessage(message, number) :
+    return_message=""
+    return_number=number
     for x in messages:
         if message in x:
-            print(x)
+        return_message=x            
+    return return_message+" &&n number: "+str(return_number)
 #modified
-ShowingMessage('Hi Mac')
+print ShowingMessage('Hi Mac', 10)
